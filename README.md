@@ -2,6 +2,8 @@
 
 A [UE4SS](https://github.com/UE4SS-RE/RE-UE4SS) Lua mod for **Stellar Blade** that turns the game's character light on or off. This is the directional light that lights the player character separately from the rest of the scene.
 
+**Download:** [Nexus Mods](https://www.nexusmods.com/stellarblade/mods/3972)
+
 ## Features
 
 - Applies your saved setting automatically once you're in-game, and again after every level load
