@@ -1,2 +1,5 @@
 # Vortex mod manager backups
 *.vortex_backup
+
+# Claude Code local settings
+.claude/
