@@ -43,4 +43,18 @@ function M.reload()
     return M.get()
 end
 
+function M.save(value)
+    local c = M.get()
+    local f, err = io.open(c.path, "w")
+    if not f then
+        print("[CharLight] Failed to save config to " .. c.path .. ": " .. tostring(err))
+        return false
+    end
+    f:write("CharacterLight=" .. tostring(value) .. "\n")
+    f:close()
+    c.CharacterLight = value
+    print("[CharLight] Config saved: CharacterLight=" .. tostring(value))
+    return true
+end
+
 return M
